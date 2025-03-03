@@ -2,12 +2,10 @@
 
 import type React from "react"
 
-import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Facebook, Github, Instagram, Layers, Linkedin, Twitter } from "lucide-react"
-import { subscribeToWaitlist } from "./actions/subscribe"
+import { CircleChevronUp } from "lucide-react"
+import Image from "next/image"
 import { useState } from "react"
 
 export default function ComingSoonPage() {
@@ -21,8 +19,8 @@ export default function ComingSoonPage() {
       <header className="w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between py-4">
           <div className="flex items-center gap-2">
-            <Layers className="h-6 w-6 text-primary" />
-            <span className="text-xl font-bold">StreamLine</span>
+            <CircleChevronUp className="h-6 w-6 text-primary" />
+            <span className="text-xl font-bold">The Tuny</span>
           </div>
         </div>
       </header>
@@ -33,34 +31,33 @@ export default function ComingSoonPage() {
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-2">
-                  <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground mb-4">
-                    Coming Soon
-                  </div>
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Streamline Your Workflow, Amplify Your Productivity
-                  </h1>
-                  <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    The all-in-one platform that helps teams collaborate, automate, and deliver faster results with less
-                    effort. Launching on {launchDate.toLocaleDateString()}.
-                  </p>
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground mb-4">
+                Coming Soon
                 </div>
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                Bringing authenticity and human connections to Marketing. 
+                </h1>
+                <p className="max-w-[600px] text-muted-foreground md:text-xl">
+                Amplify people, improve trust with customers
+                </p>
+              </div>
 
-                <WaitlistForm />
+              <WaitlistForm />
               </div>
               <Image
-                src="/placeholder.svg?height=550&width=550"
-                width={550}
-                height={550}
-                alt="Product Preview"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last"
+              src="/hero_bkgnd.jpg"
+              width={550}
+              height={550}
+              alt="Product Preview"
+              className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last"
               />
             </div>
           </div>
         </section>
 
         {/* Countdown Section */}
-        <section className="w-full py-12 md:py-16 bg-muted">
+        {/* <section className="w-full py-12 md:py-16 bg-muted">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Launching In</h2>
@@ -92,7 +89,7 @@ export default function ComingSoonPage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* What to Expect Section */}
         <section className="w-full py-12 md:py-24">
@@ -101,7 +98,7 @@ export default function ComingSoonPage() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">What to Expect</h2>
                 <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed">
-                  We're working hard to bring you a platform that will transform how your team works.
+                  We are working hard to bring you a platform that will transform how your team works.
                 </p>
               </div>
               <div className="mx-auto grid max-w-5xl gap-6 py-8 md:grid-cols-3">
@@ -134,34 +131,12 @@ export default function ComingSoonPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
             <div className="flex items-center gap-2">
-              <Layers className="h-6 w-6 text-primary" />
-              <span className="text-xl font-bold">StreamLine</span>
-            </div>
-            <div className="flex gap-4">
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                <Facebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                <Instagram className="h-5 w-5" />
-                <span className="sr-only">Instagram</span>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                <Github className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
-              </Link>
+              <CircleChevronUp className="h-6 w-6 text-primary" />
+              <span className="text-xl font-bold">The Tuny</span>
             </div>
           </div>
           <div className="mt-8 text-center text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} StreamLine. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} The Tuny. All rights reserved.</p>
           </div>
         </div>
       </footer>
@@ -172,24 +147,55 @@ export default function ComingSoonPage() {
 function WaitlistForm() {
   const [email, setEmail] = useState("")
   const [error, setError] = useState("")
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+
+  // Airtable configuration - replace with your actual values
+  const AIRTABLE_API_KEY = "pat8KQZU2sXf3ZeSk.9cffba1d0400358c6b396ea30d6690e65774e1656fe8f55ecb887b4524c7994c"
+  const AIRTABLE_BASE_ID = "appb6TpGEyY9wqUEa"
+  const AIRTABLE_TABLE_NAME = "AD"
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setError("")
+    setIsSubmitting(true)
 
     // Basic email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     if (!emailRegex.test(email)) {
       setError("Please enter a valid email address.")
+      setIsSubmitting(false)
       return
     }
 
-    const result = await subscribeToWaitlist(email)
-    if (result.success) {
-      setIsSubmitted(true)
-    } else {
-      setError(result.error || "An error occurred. Please try again.")
+    try {
+      // Direct Airtable API call
+      const response = await fetch(`https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${AIRTABLE_TABLE_NAME}`, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${AIRTABLE_API_KEY}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fields: {
+            Email: email,
+          },
+        }),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        setIsSubmitted(true)
+      } else {
+        console.error("Airtable error:", data)
+        setError("Failed to submit. Please try again.")
+      }
+    } catch (err) {
+      console.error("Error submitting to Airtable:", err)
+      setError("An error occurred. Please try again.")
+    } finally {
+      setIsSubmitting(false)
     }
   }
 
@@ -212,11 +218,14 @@ function WaitlistForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             className={error ? "border-red-500" : ""}
+            disabled={isSubmitting}
           />
-          <Button type="submit">Notify Me</Button>
+          <Button type="submit" disabled={isSubmitting}>
+            {isSubmitting ? "Submitting..." : "Notify Me"}
+          </Button>
         </div>
         {error && <p className="text-red-500 text-sm">{error}</p>}
-        <p className="text-xs text-muted-foreground">We'll never share your email with anyone else.</p>
+        <p className="text-xs text-muted-foreground">We will never share your email with anyone else.</p>
       </form>
     </div>
   )
