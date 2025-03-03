@@ -98,26 +98,26 @@ export default function ComingSoonPage() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">What to Expect</h2>
                 <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed">
-                  We are working hard to bring you a platform that will transform how your team works.
+                  Our Guiding Principles Intentional. Sign up to join our community and be notified when we launch.
                 </p>
               </div>
               <div className="mx-auto grid max-w-5xl gap-6 py-8 md:grid-cols-3">
                 <div className="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm">
-                  <h3 className="text-xl font-bold">Seamless Collaboration</h3>
+                  <h3 className="text-xl font-bold">Market freely with authenticity</h3>
                   <p className="text-center text-muted-foreground">
-                    Work together in real-time with your team, no matter where they are.
+                    Reach your audience with a human touch.
                   </p>
                 </div>
                 <div className="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm">
                   <h3 className="text-xl font-bold">Smart Automation</h3>
                   <p className="text-center text-muted-foreground">
-                    Automate repetitive tasks and focus on what matters most.
+                    Rely on us to automate behind the scenes. Focus on what matters most.
                   </p>
                 </div>
                 <div className="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm">
                   <h3 className="text-xl font-bold">Powerful Insights</h3>
                   <p className="text-center text-muted-foreground">
-                    Get the data you need to make informed decisions quickly.
+                    See how your audience is engaging. Make data-driven decisions -- fast. 
                   </p>
                 </div>
               </div>
